@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookshelf Apps</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <main>
+      <div class="form-container">
+        <h2>Tambah Buku Baru</h2>
+        <form id="form-input-data" action="" method="post">
+          <div class="form-element">
+            <label for="judul">Judul</label>
+            <input type="text" name="judul" id="judul" required />
+          </div>
+          <div class="form-element">
+            <label for="penulis">Penulis</label>
+            <input type="text" name="penulis" id="penulis" required />
+          </div>
+          <div class="form-element">
+            <label for="tahun">Tahun</label>
+            <input type="number" name="tahun" id="tahun" required />
+          </div>
+          <div class="form-check">
+            <label for="isRead">Sudah selesai dibaca</label>
+            <input type="checkbox" name="isRead" id="isRead" />
+          </div>
+          <input
+            type="submit"
+            name="submit"
+            value="submit"
+            class="submit-btn"
+          />
+        </form>
+      </div>
+      <div class="list-data">
+        <div class="data-belum-dibaca">
+          <h2>Belum Selesai Dibaca</h2>
+          <div id="belumDibaca"></div>
+        </div>
+        <div class="data-sudah-dibaca">
+          <h2>Sudah Dibaca</h2>
+          <div id="sudahDibaca"></div>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

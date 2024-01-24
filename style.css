@@ -1,0 +1,159 @@
+:root {
+  --color-border: 2px solid #0aa1dd;
+  --color-shadow: 1px 1px 10px #7b7b7b;
+  --color-bg: #191919;
+  --color-white: #fff;
+  --color-red: #8b0000;
+  --color-hover-red: #b40808;
+  --color-submit: #0aa1dd;
+  --color-submit-hover: #36c6ff;
+  --color-btn-green: #1eae53;
+  --color-btn-green-hover: #22c55e;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'poppins', sans-serif;
+  background-color: var(--color-bg);
+  padding: 20px;
+}
+
+.form-container,
+.data-belum-dibaca,
+.data-sudah-dibaca {
+  padding: 1rem;
+  background: var(--color-bg);
+  border-radius: 20px;
+  width: 100%;
+  box-shadow: var(--color-shadow);
+}
+
+.form-container {
+  width: 60%;
+  margin: 0 auto 50px;
+  padding: 20px 30px 50px;
+}
+
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color : white;
+}
+
+#form-input-data input {
+  box-shadow: var(--color-shadow);
+}
+
+.form-element {
+  margin-bottom: 0.75rem;
+}
+
+.form-element input {
+  border: var(--color-border);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  width: 100%;
+  font-size: 1rem;
+  outline: none;
+}
+
+.form-element label {
+  color : white;
+}
+
+.list-data h2 {
+  margin-bottom: 1rem;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.submit-btn {
+  border: none;
+  outline: none;
+  background-color: var(--color-submit);
+  color: var(--color-white);
+  float: right;
+  font-weight: bold;
+  padding: 0.5rem 2rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.submit-btn:hover,
+.cari-btn:hover {
+  background-color: var(--color-submit-hover);
+}
+
+.form-check input {
+  cursor: pointer;
+}
+
+.form-check label {
+  color : white;
+}
+
+.list-data {
+  display: flex;
+  gap: 1rem;
+  width: 80%;
+  margin: auto;
+  color : white;
+}
+
+.item {
+  border: var(--color-border);
+  box-shadow: var(--color-shadow);
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.item-action {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.hapus-btn,
+.selesai-btn,
+.kembalikan-btn {
+  padding: 0.25rem 0.5rem;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  color: var(--color-white);
+  font-size: 1.25rem;
+  border-radius: 0.25rem;
+}
+
+.hapus-btn {
+  background-color: var(--color-red);
+}
+
+.hapus-btn:hover {
+  background-color: var(--color-hover-red);
+}
+
+.selesai-btn {
+  background-color: var(--color-btn-green);
+}
+
+.selesai-btn:hover {
+  background-color: var(--color-btn-green-hover);
+}
+
+.kembalikan-btn {
+  background-color: var(--color-btn-green);
+}
+
+.kembalikan-btn:hover {
+  background-color: var(--color-btn-green-hover);
+}
